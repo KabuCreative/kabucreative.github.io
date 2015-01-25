@@ -508,15 +508,6 @@ nav a:hover{
     left:-1px;
 }
 
-#banner-testimonials {
-    background-image: url('../img/banners/blog.png');
-    width:574px;
-    height:327px;
-    position:absolute;
-    bottom:0px;
-    left:16px;
-}
-
 #banner-contact-us {
     width:599px;
     height:278px;
@@ -1301,16 +1292,6 @@ h1#h1-grid:before {
 
 .project-last {
     border-bottom:0;
-}
-
-.project-recent:before {
-    content:'';
-    display:block;
-    position:absolute;
-    left:-104px;
-    width:81px;
-    height:102px;
-    background-image: url('../img/latest-design.png');
 }
 
 /* contact page specific styles*/
