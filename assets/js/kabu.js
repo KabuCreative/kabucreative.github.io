@@ -35,46 +35,6 @@ $(document).ready(function() {
     };
 
 
-    //Create accordion on solutions page
-
-    function getUrlParameter(sParam){
-        var sPageURL = window.location.search.substring(1);
-        var sURLVariables = sPageURL.split('&');
-        for (var i = 0; i < sURLVariables.length; i++){
-            var sParameterName = sURLVariables[i].split('=');
-            if (sParameterName[0] == sParam){
-                return sParameterName[1];
-            }
-        }
-    }
-
-    // Get the #hash of the URL
-    var path = getUrlParameter('section');
-    var active;
-
-    if (path == 'conversion-optimisation'){
-        active = 1;
-    } else if (path == 'e-marketing-consulting'){
-        active = 2;
-    } else {
-        active = 0;
-    }
-
-    $( "#accordion" ).accordion({
-        animate: 600,
-        heightStyle: 'content',
-        collapsible: true,
-        active: active
-    });
-
-
-    $('#accordion').on('accordionbeforeactivate', function (event, ui) {
-        var servicesPos = $('#services').offset().top;
-        $("html, body").animate({ scrollTop: servicesPos}, 'slow');
-
-    });
-
-
     //Add visit link on social media platform in footer
     $(function() {
         var mediaitem = $('.social-media-wrapper');

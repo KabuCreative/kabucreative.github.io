@@ -957,7 +957,7 @@ del.websites:after {
 .services-intro {
     width:700px;
     float:right;
-    margin-top:15px;
+    margin-top:30px;
 }
 
 .services-intro h2 {
@@ -969,54 +969,28 @@ del.websites:after {
 
 /*accordian generic styles*/
 
-#accordion {
+.service {
     background-color:#fff;
     border:1px solid #E3E0D7;
-    margin:30px 0 20px 0;
+    margin:30px 0;
     border-radius: 3px;
     webkit-border-radius: 3px;
 }
 
-#accordion h2 {
-    background: url("../img/lg-green-button-bg.png") repeat-x scroll 0 0 #55887A;
-    margin:5px;
+.service h2 {
     padding:10px;
     cursor: pointer;
     position:relative;
     color: #fff ;
-    font-size:20px;
-    text-shadow: -1px -1px 1px #5F7D75;
-    border-radius: 3px;
-    webkit-border-radius: 3px;
+    font-size:18px;
+    background-color:#709689;
 
 }
-.ui-accordion-header {
-    outline: none;
+.service div.service-content {
+    padding:10px 25px 10px 25px;
 }
 
-.ui-accordion-header-icon {
-    display:block;
-    width:10px;
-    height:7px;
-    position:absolute;
-    right:15px;
-    top:17px;
-    background-color: #333 ;
-}
-
-#accordion h2.ui-state-default .ui-accordion-header-icon{
-    background: url('../img/accordian-arrow.png') no-repeat 0 top;
-}
-
-#accordion h2.ui-accordion-header-active .ui-accordion-header-icon{
-    background: url('../img/accordian-arrow.png') no-repeat 0 bottom;
-}
-
-#accordion div.accordion-content {
-    padding:20px 25px 10px 25px;
-}
-
-#accordion h3   {
+.service h3   {
     margin:5px 0 15px;
     padding:0;
 }
@@ -1094,22 +1068,22 @@ del.websites:after {
     border: 1px dashed #E3E0D7;
 }
 
-#accordion .consulting-questions-1,
-#accordion .consulting-questions-2 {
+.service .consulting-questions-1,
+.service .consulting-questions-2 {
     width:360px;
     margin:10px 0 0 15px;
 }
 
-#accordion .consulting-questions-1 {
+.service .consulting-questions-1 {
     padding-left:15px;
 }
 
-#accordion .consulting-questions-2 {
+.service .consulting-questions-2 {
     padding-right:25px;
 }
 
-#accordion .consulting-questions-1 ul,
-#accordion .consulting-questions-2 ul {
+.service .consulting-questions-1 ul,
+.service .consulting-questions-2 ul {
     margin: 0;
 }
 
