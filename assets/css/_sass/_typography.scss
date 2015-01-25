@@ -1,0 +1,81 @@
+/* Typography etc*/
+
+h1,
+h2 {
+    font-family: 'Viga', sans-serif;
+    margin-bottom:25px;
+    padding-top:10px;
+}
+
+h1 {
+    color:#bd4137;
+    font-size:26px;
+}
+
+h2{
+    font-size:20px;
+    color:#333;
+}
+
+h3{
+    font-size:18px;
+    font-family: 'Viga', sans-serif;
+    padding:10px 0;
+    color:#BD4137;
+}
+
+
+p, label, li, span, q, cite {
+    font-size:14px;
+    line-height:18px;
+}
+
+p {
+    padding-bottom:18px;
+}
+
+small {
+    font-size:10px;
+}
+
+strong {
+    font-weight:600;
+}
+
+em {
+    font-style:italic;
+}
+
+a {
+    color:#5e7f77;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+blockquote p {
+    display:block;
+    font-style:italic;
+    padding-bottom:17px;
+}
+
+cite {
+    display:block;
+    font-weight:bold;
+}
+
+.alert {
+    padding: 20px;
+    line-height: 20px;
+    margin-bottom: 38px;
+    background-color: #eef4f3;
+    border-left: 10px solid #5e7f77;
+    color: #5e7f77;
+}
+
+a.no-outline {
+    outline:none;
+}

@@ -1,0 +1,50 @@
+.flt-right{
+    float:right;
+}
+
+.flt-left{
+    float:left;
+}
+
+.clear {
+    clear:both;
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+}
+
+.col-width4 {
+    width: 300px;
+}
+
+.w-gutter {
+    margin-right:20px;
+}
+
+.content-block {
+    background-color:#fff;
+    border: 1px solid #f0efed;
+}
+
+.green-button {
+    display:block;
+    height: 33px;
+    line-height:33px;
+    border: 1px solid #5e7f77;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #fff;
+    font-family: 'Viga', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #709689;
+    text-align:center;
+    text-decoration:none;
+    font-weight:normal;
+}
+
+.green-button:hover {
+    text-decoration: none;
+    background-color: #668a7e;
+}

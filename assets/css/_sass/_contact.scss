@@ -1,0 +1,66 @@
+/* contact page specific styles*/
+
+.contact-kabu {
+    margin-bottom:0px;
+}
+
+.contact-kabu h1 {
+    width:272px;
+    height:57px;
+    line-height:57px;
+    padding:0 0 0 25px;
+    color:#5e7f77;
+    background: url('../../img/contact-arrow.png');
+    float:left;
+    margin-top:5px;
+}
+
+.contact-details {
+    width:305px;
+    float:right;
+    margin-top:8px;
+}
+
+.contact-details a, .contact-details p {
+    font-family:'Viga', arial, sans-serif;
+    display:block;
+    color: #bd4137;
+    text-decoration: none;
+    font-size:24px;
+    font-weight:normal;
+    line-height:24px;
+    height:24px;
+    margin:0;
+}
+
+#kabu-phone {
+    background: url('../../img/phone-icon.png') no-repeat center left;
+    padding:0 0 0 35px;
+}
+
+#kabu-phone span {
+    font-size:24px;
+}
+
+#kabu-email {
+    font-size:21px;
+    background: url('../../img/envelope-icon.png') no-repeat center left;
+    margin-top:5px;
+    padding:0 0 0 35px;
+}
+
+#map {
+    clear:both;
+    padding: 15px 20px 20px 20px;
+    width: 575px;
+    margin:3px 0 20px 0;
+}
+
+#map p {
+    padding-bottom:15px;
+}
+
+#map_canvas {
+    width:575px;
+    height:200px;
+}

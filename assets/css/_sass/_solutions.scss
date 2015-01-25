@@ -1,0 +1,233 @@
+/* solutions page specific styles */
+
+.four-steps {
+    margin-top:10px;
+}
+
+.four-steps li {
+    margin-bottom:15px;
+    display:block;
+    border:1px solid #E3E0D7;
+    background-color: #fff;
+    padding:15px 15px 15px 82px;
+    position:relative;
+    width:515px;
+}
+
+.four-steps li strong {
+    display:block;
+    margin-bottom:5px;
+}
+
+.four-steps li strong:before {
+    color:#fff;
+    background-color:#cb5249;
+    display:block;
+    padding:15px;
+    width:17px;
+    text-align:center;
+    position:absolute;
+    left:17px;
+    top:17px;
+    font-family:'Viga';
+    font-weight:normal;
+    font-size:30px;
+    border-radius:5px;
+    webkit-border-radius: 5px;
+}
+
+.step-1 strong:before {
+    content:"1";
+}
+
+.step-2 strong:before {
+    content:"2";
+}
+
+.step-3 strong:before {
+    content:"3";
+}
+
+.step-4 strong:before {
+    content:"4";
+}
+
+.steps {
+    width: 615px;
+    float:left;
+}
+
+.step-1 {
+    height:60px;
+}
+
+.step-2 {
+    height:98px;
+}
+
+.step-3 {
+    height:78px;
+}
+
+.step-4 {
+     height:78px;
+}
+
+.services-testimonial {
+    width:250px;
+    height:192px;
+    padding:35px 25px;
+    float:right;
+    margin:5px 0 0 0;
+    background-color:#fdfcfa;
+    border: 1px dashed #E3E0D7;
+}
+
+
+/* services*/
+
+.services {
+    margin: 20px 0 0;
+    padding: 35px 0 0;
+    border-top: 0.1em dashed #e6ddd0;
+}
+
+.puzzle {
+    width:180px;
+    height:170px;
+    float:left;
+    margin: 3px 0 0 22px;
+}
+
+.services-intro {
+    width:700px;
+    float:right;
+    margin-top:30px;
+}
+
+.services-intro h2 {
+    color: #BD4137;
+    font-size: 26px;
+    margin-bottom:20px;
+}
+
+
+/* Services */
+
+.service {
+    background-color:#fff;
+    border:1px solid #E3E0D7;
+    margin:30px 0;
+    border-radius: 3px;
+    webkit-border-radius: 3px;
+}
+
+.service h2 {
+    padding:10px;
+    cursor: pointer;
+    position:relative;
+    color: #fff ;
+    font-size:18px;
+    background-color:#709689;
+
+}
+.service div.service-content {
+    padding:10px 25px 10px 25px;
+}
+
+.service h3   {
+    margin:5px 0 15px;
+    padding:0;
+}
+
+/* web design & development */
+
+.website-content-left {
+    width:430px;
+}
+
+.website-content-right {
+    width:415px;
+}
+
+.website-content-right img {
+    display:block;
+    width:415px;
+    margin:15px auto 0 auto;
+}
+
+.seven-blessings-testimonial {
+    margin:20px 5px;
+}
+
+.hosting {
+    margin:20px 0;
+    padding:25px 25px 10px 25px;
+    background-color:#fdfcfa;
+    border: 1px dashed #E3E0D7;
+}
+
+.hosting-left, .hosting-right {
+    width:390px;
+}
+
+.hosting-left{
+    float:left;
+}
+
+.hosting-right {
+    float:right;
+}
+
+.hosting h4{
+    font-weight:bold;
+    padding-bottom:15px;
+}
+
+/* conversion */
+
+.conversion-block-1 {
+    width:620px;
+}
+
+.conversion-block-2 {
+    margin:10px 35px 0 0;
+}
+
+.landing-pages,
+.conversion-testing {
+    margin:20px 0 30px 0;
+    width:378px;
+    height:566px;
+    padding:25px 25px 10px 25px;
+    background-color:#fdfcfa;
+    border: 1px dashed #E3E0D7;
+}
+
+/* emarketing consulting */
+
+.consulting-questions {
+    margin:10px 0 25px;
+    padding:25px;
+    background-color:#fdfcfa;
+    border: 1px dashed #E3E0D7;
+}
+
+.service .consulting-questions-1,
+.service .consulting-questions-2 {
+    width:360px;
+    margin:10px 0 0 15px;
+}
+
+.service .consulting-questions-1 {
+    padding-left:15px;
+}
+
+.service .consulting-questions-2 {
+    padding-right:25px;
+}
+
+.service .consulting-questions-1 ul,
+.service .consulting-questions-2 ul {
+    margin: 0;
+}

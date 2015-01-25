@@ -1,0 +1,60 @@
+/* homepage specific styles*/
+
+.service-block {
+    width:238px;
+    padding:30px;
+    float:left;
+    position:relative;
+    margin-top:10px;
+}
+
+.homepage-badge {
+    position:absolute;
+    left:-10px;
+    top:-10px;
+}
+
+.service-block h2 {
+    padding-left:62px;
+    margin-top:-7px;
+    line-height:1;
+    font-size:26px;
+}
+
+.service-details {
+    margin-top:20px;
+    border-top:2px solid #f0efed;
+    padding-top:20px;
+}
+
+
+.service-block .green-button {
+    margin:15px auto 5px auto;
+    width: 170px;
+}
+
+#homepage-title {
+    height:61px;
+    text-align:center;
+    padding-top:36px;
+    margin:55px 0 45px 0;
+    background:url('../../img/homepage-title-bg.png') no-repeat center top;
+}
+
+
+#homepage-title h1{
+    margin:0;
+    padding:0;
+}
+
+.homepage-content {
+    float:left;
+    width:240px;
+    padding:0 30px;
+    margin-bottom:20px;
+    text-align:left;
+}
+
+.homepage-content h2 {
+    margin-bottom:20px;
+}

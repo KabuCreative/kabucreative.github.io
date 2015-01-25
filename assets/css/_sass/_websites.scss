@@ -1,0 +1,67 @@
+/* websites page specific styles*/
+
+h1#h1-grid {
+    display:block;
+    float:left;
+    line-height:36px;
+    padding-top:5px;
+    margin-bottom:12px;
+
+}
+
+h1#h1-grid:before {
+    content: '';
+    background: url('../../img/h1-grid.png') no-repeat 52.5% 0%;
+    width:48px;
+    height:43px;
+    display:block;
+    float:right;
+    margin-left:-7px;
+}
+
+.portfolio-testimonial {
+    width:250px;
+    padding:20px;
+    background-color:#fdfcfa;
+    border: 1px dashed #E3E0D7;
+    float:right;
+    height:258px;
+}
+
+
+/*Individual Projects*/
+
+.project {
+    padding: 50px 0;
+    border-bottom: 1px dashed #E3E0D7;
+    margin-bottom:0;
+}
+
+.project-text {
+    width:210px;
+}
+
+.project-text h3 {
+    padding: 0 0 20px 0;
+    color:#333;
+}
+
+.project-image {
+    width:700px;
+    height:350px;
+    border:1px solid #f0efed;
+}
+
+.project-odd .project-text,
+.project-even .project-image {
+    float:left;
+}
+
+.project-even .project-text,
+.project-odd .project-image {
+    float:right;
+}
+
+.project-last {
+    border-bottom:0;
+}

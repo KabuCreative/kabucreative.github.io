@@ -1,0 +1,63 @@
+/* about us page specific styles*/
+
+del.websites {
+    text-decoration:none;
+}
+
+del.websites:after {
+    content:"";
+    position:absolute;
+    margin-left:-110px;
+    margin-top:12px;
+    width:114px;
+    height:7px;
+    background-image: url('../../img/strikethrough.png');
+}
+
+.about-intro {
+    width:615px;
+    padding-bottom:25px;
+}
+
+
+
+.pride {
+    background-color:#fdfcfa;
+    border: 1px dashed #E3E0D7;
+    padding:15px 10px;
+    margin:10px 0 0 0;
+    height: 95px;
+}
+
+#content .pride ul {
+    display:block;
+    float:left;
+    width:260px;
+    height: 60px;
+}
+
+#content .pride ul.pride-ul-2 {
+    margin-left:40px;
+}
+
+.pride p {
+    padding:3px 0 12px 15px;
+}
+
+.we-are {
+    padding:0px 0 40px 0;
+}
+
+.about-block {
+    width:248px;
+    padding:25px 25px 7px 25px;
+    background-color:#fff;
+    border:1px solid #E3E0D7;
+    margin-top:20px;
+}
+
+
+.about-block h3 {
+    margin:0;
+    padding:0 0 20px 0;
+}
