@@ -333,11 +333,9 @@ aside {
     -webkit-border-radius: 3px;
     color: #fff;
     font-family: 'Viga', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
-    text-shadow: -1px -1px 1px #5f7d75;
-    filter: dropshadow(color=#5f7d75, offx=-1, offy=-1);
-    background: #55887a url('../img/lg-green-button-bg.png') repeat-x;
+    background-color: #709689;
     text-align:center;
     text-decoration:none;
     font-weight:normal;
@@ -640,11 +638,10 @@ nav a:hover{
     -webkit-border-radius: 3px;
     color: #fff !important;
     font-family: 'Viga', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: normal;
     cursor: pointer;
-    text-shadow: -1px -1px 1px #5f7d75;
-    filter: dropshadow(color=#5f7d75, offx=-1, offy=-1);
-    background: #55887a url('../img/lg-green-button-bg.png') repeat-x;
+    background-color: #709689;
     outline:none;
 }
 
