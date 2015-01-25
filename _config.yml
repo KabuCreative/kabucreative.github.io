@@ -18,4 +18,5 @@ exclude: [vendor]
 
 gems:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
