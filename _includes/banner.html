@@ -1,0 +1,7 @@
+<div id="banner-space" class="wrapper">
+    <div id="banner-{{ page.id }}" class="{% if page.id == 'home' %}banners{% else %}banner{% endif %}"></div>
+    {% if page.id == 'home' %}
+        <div id="banner-home-2" class="banners"></div>
+        <div id="banner-home-3" class="banners"></div>
+    {% endif %}
+</div>

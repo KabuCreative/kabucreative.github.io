@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<aside>
+    <div id="cta" class="col-width3">
+        <img src="/assets/img/get-in-touch.png" alt="Get in Touch" id="get-in-touch"/>
+        <p class="flt-left" id="cta-intro-text">Contact us today to find out what we can do for your business.</p>
+        <img class="flt-right" src="/assets/img/cta-arrow.png" alt="Cursor" />
+        <div class="clear"></div>
+            <form accept-charset="UTF-8" action="http://formspree.io/info@kabucreative.com.au" method="POST" id="contact-form">
+            <input type="hidden" name="_next" value="//www.kabucreative.com.au/thank-you/" />
+            <input type="hidden" name="_subject" value="New enquiry from the Kabu Creative website" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="id_name">Name:</label>
+                        <input type="text" name="name" id="id_name" required />
+                    </li>
+                    <li>
+                        <label for="id_email">Email Address:</label>
+                        <input type="email" name="email" id="id_email" required />
+                    </li>
+                    <li>
+                        <label for="id_phone">
+                            Phone Number: <span class="optional">(optional)</span>
+                        </label>
+                        <input type="tel" name="phone" id="id_phone"/>
+                    </li>
+                    <li>
+                        <label for="id_comments">
+                            Comments: <span class="optional">(optional)</span>
+                        </label>
+                        <textarea name="comments" cols="50" rows="10" id="id_comments" ></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" value="Contact Us" id="cta-submit" class="green-button"/>
+                    </li>
+
+                </ul>
+            </fieldset>
+        </form>
+        <img src="/assets/img/privacy.png" alt="We respect your privacy and do not share your data" />
+    </div>
+</aside>
+
+{{ content }}
+
+<div class="clear"></div>

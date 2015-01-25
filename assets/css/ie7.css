@@ -1,0 +1,82 @@
+/*ie 7 conditional stylesheet - it ain't pretty, but it works*/
+
+h1,
+h2,
+h3,
+.green-button,
+nav a,
+#cta form #cta-submit,
+#cta-button,
+.four-steps li strong:before,
+.comments-button,
+.pulledquote,
+.tweet,
+.blog-post-teaser h2 a,
+.contact-details a,
+.contact-details p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:bold !important;
+}
+
+.contact-kabu h1 {
+    font-size: 24px;
+}
+
+#kabu-email {
+    font-size:20px;
+}
+
+
+.services-testimonial blockquote q{
+    font-size:13px;
+}
+
+.pride ul.tick li {
+    width:290px;
+}
+
+#blog-welcome {
+    font-size:23px;
+}
+
+#blog-author-profile {
+    margin-top:0;
+}
+
+ol.four-steps li {
+    list-style-type:decimal;
+    padding:15px 15px 15px 15px;
+    width:582px;
+}
+
+.services {
+    border-top: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+h1{
+    margin-bottom: 30px;
+    padding-top:13px;
+}
+
+h1#h1-grid {
+    margin-bottom:26px;
+}
+
+.portfolio-piece-first {
+    margin-top:-230px;
+}
+
+#content {
+    position:relative;
+}
+
+#cta form #cta-submit {
+    border:0;
+}
+
+.next,
+.prev {
+    display: none;
+}

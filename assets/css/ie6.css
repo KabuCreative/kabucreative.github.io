@@ -1,0 +1,145 @@
+/*ie 6 conditional stylesheet - it ain't pretty, but it works*/
+
+body {
+    margin:0;
+    padding:0 0 30px 0;
+    font-family: helvetica, arial, sans-serif;
+    background-color:#FFFDF9;
+}
+
+.wrapper {
+    width:700px;
+    margin:0 auto;
+    position:inline;
+}
+
+/* ie 6*/
+#ie6 {
+    line-height:20px;
+    color:#fff;
+    background-color:#BD4137;
+    padding:20px 0 30px 0;
+    width:100%;
+    font-weight:bold;
+    display:block;
+}
+
+
+#ie6 p {
+    font-size:16px;
+}
+
+#ie6 p#yikes {
+    font-size:20px;
+}
+
+#ie6 a {
+    color:#fff;
+    text-decoration:underline;
+}
+
+#ie6-title {
+    display:block;
+    font-size:25px;
+    font-weight:bold;
+    width:700px;
+    margin:20px auto 0 auto;
+
+}
+
+img {
+    display:none;
+}
+
+.portfolio-row-2 .portfolio-item {
+    display:block;
+    margin: 10px 0;
+}
+
+#footer-content {
+    display:none;
+}
+
+nav {
+    width:700px;
+    margin: 20px auto 25px auto;
+}
+
+nav a {
+    display:inline;
+    padding:3px 0;
+    margin-right:10px;
+}
+
+/*Call to Action (form)*/
+
+#cta {
+    width:250px;
+}
+
+fieldset {
+        padding:20px;
+}
+
+#cta form label {
+    display:block;
+}
+
+#cta form input,
+#cta form textarea {
+    border: 1px solid #e3e0d7;
+    margin-top:6px;
+    padding:5px;
+    font-size:14px;
+}
+
+
+#cta form textarea {
+    height: 65px;
+    resize: none;
+    padding:5px;
+}
+
+#content aside #cta ul {
+    padding:0;
+    margin:0;
+}
+
+#content aside #cta ul li {
+    padding:5px 0;
+    width: 228px;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+#breadcrumbs {
+    display:none;
+}
+
+#aside {
+    display:none;
+}
+
+.comments-button {
+    display:none;
+}
+
+#homepage-title h1 {
+    width:700px;
+    margin: 0 auto;
+    padding:30px 0;
+}
+
+.four-steps li strong {
+    display:block;
+    padding-bottom:3px;
+}
+
+li {
+    padding:5px 0;
+}
+
+#thank-you-modal {
+    display:none;
+}
