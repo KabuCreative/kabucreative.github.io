@@ -387,8 +387,8 @@ nav a:hover{
 }
 
 .banner, /*default*/
-#banner-portfolio {
-    background-image: url('../img/banners/portfolio.png');
+#banner-websites {
+    background-image: url('../img/banners/websites.png');
     width:591px;
     height:333px;
     position:absolute;
@@ -442,6 +442,15 @@ nav a:hover{
     position:absolute;
     bottom:4px;
     left:-1px;
+}
+
+#banner-web-apps {
+    background-image: url('../img/banners/web-apps.png');
+    width:574px;
+    height:327px;
+    position:absolute;
+    bottom:0px;
+    left:16px;
 }
 
 #banner-contact-us {
