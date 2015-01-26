@@ -17,8 +17,11 @@ del.websites:after {
 .about-intro {
     width:615px;
     padding-bottom:25px;
-}
 
+    @media only screen and (max-width: 940px) {
+        width: 100%;
+    }
+}
 
 
 .pride {
@@ -27,6 +30,10 @@ del.websites:after {
     padding:15px 10px;
     margin:10px 0 0 0;
     height: 95px;
+
+    @media only screen and (max-width: 940px) {
+        height: auto;
+    }
 }
 
 #content .pride ul {
@@ -34,10 +41,27 @@ del.websites:after {
     float:left;
     width:260px;
     height: 60px;
+
+    @media only screen and (max-width: 940px) {
+        width: 45%;
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 670px) {
+        float: none;
+        width: auto;
+        margin-bottom: 0;
+    }
 }
 
 #content .pride ul.pride-ul-2 {
     margin-left:40px;
+
+    @media only screen and (max-width: 660px) {
+        margin-left: 15px;
+    }
+
 }
 
 .pride p {
@@ -54,8 +78,17 @@ del.websites:after {
     background-color:#fff;
     border:1px solid #E3E0D7;
     margin-top:20px;
+
+    @media only screen and (max-width: 940px) {
+        width: auto;
+    }
 }
 
+@media only screen and (max-width: 940px) {
+    .about-block.w-gutter{
+        margin-right: 0;
+    }
+}
 
 .about-block h3 {
     margin:0;
