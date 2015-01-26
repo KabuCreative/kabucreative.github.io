@@ -13,12 +13,27 @@
     background: url('../../img/contact-arrow.png');
     float:left;
     margin-top:5px;
+
+    @media only screen and (max-width: 700px) {
+        width: 100%;
+        height: auto;
+        background: none;
+        float: none;
+        line-height: 1.2;
+        padding: 0;
+    }
 }
 
 .contact-details {
     width:305px;
-    float:right;
-    margin-top:8px;
+    float:left;
+    margin:8px 0 0 15px;
+
+    @media only screen and (max-width: 700px) {
+        width: 100%;
+        float: none;
+        margin: 0 0 30px 0;
+    }
 }
 
 .contact-details a, .contact-details p {
@@ -29,8 +44,12 @@
     font-size:24px;
     font-weight:normal;
     line-height:24px;
-    height:24px;
     margin:0;
+
+    -ms-word-break: break-all;
+     word-break: break-all;
+     // Non standard for webkit
+     word-break: break-word;
 }
 
 #kabu-phone {
@@ -54,6 +73,11 @@
     padding: 15px 20px 20px 20px;
     width: 575px;
     margin:3px 0 20px 0;
+
+    @media only screen and (max-width: 940px) {
+        width: 95%;
+        padding: 2%;
+    }
 }
 
 #map p {
@@ -63,4 +87,8 @@
 #map_canvas {
     width:575px;
     height:200px;
+
+    @media only screen and (max-width: 940px) {
+        width: 100%;
+    }
 }
