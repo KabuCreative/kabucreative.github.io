@@ -12,6 +12,10 @@
     padding:15px 15px 15px 82px;
     position:relative;
     width:515px;
+
+    @media only screen and (max-width: 940px) {
+        width: auto;
+    }
 }
 
 .four-steps li strong {
@@ -55,6 +59,11 @@
 .steps {
     width: 615px;
     float:left;
+
+    @media only screen and (max-width: 940px) {
+        width: 100%;
+        float: none;
+    }
 }
 
 .step-1 {
@@ -73,6 +82,20 @@
      height:78px;
 }
 
+@media only screen and (max-width: 940px) {
+    .step-1,
+    .step-2,
+    .step-3,
+    .step-4 {
+        height: auto;
+
+        p {
+            padding-bottom: 0;
+        }
+    }
+}
+
+
 .services-testimonial {
     width:250px;
     height:192px;
@@ -81,6 +104,12 @@
     margin:5px 0 0 0;
     background-color:#fdfcfa;
     border: 1px dashed #E3E0D7;
+
+    @media only screen and (max-width: 940px) {
+        width: auto;
+        height: auto;
+        float: none;
+    }
 }
 
 
@@ -90,6 +119,11 @@
     margin: 20px 0 0;
     padding: 35px 0 0;
     border-top: 0.1em dashed #e6ddd0;
+
+    @media only screen and (max-width: 940px) {
+        border: 0;
+        margin-top: 0;
+    }
 }
 
 .puzzle {
@@ -97,12 +131,30 @@
     height:170px;
     float:left;
     margin: 3px 0 0 22px;
+
+    @media only screen and (max-width: 940px) {
+        display: none;
+    }
 }
 
 .services-intro {
     width:700px;
     float:right;
     margin-top:30px;
+
+    @media only screen and (max-width: 940px) {
+        float: none;
+        width: auto;
+        margin-top: 0;
+
+        p {
+            padding-bottom: 0;
+        }
+
+        span {
+            display: block;
+        }
+    }
 }
 
 .services-intro h2 {
@@ -130,6 +182,10 @@
     font-size:18px;
     background-color:#709689;
 
+    @media only screen and (max-width: 940px) {
+        margin-bottom: 10px;
+    }
+
 }
 .service div.service-content {
     padding:10px 25px 10px 25px;
@@ -144,10 +200,20 @@
 
 .website-content-left {
     width:430px;
+
+    @media only screen and (max-width: 940px) {
+        width: auto;
+        float: none;
+    }
 }
 
 .website-content-right {
     width:415px;
+
+    @media only screen and (max-width: 940px) {
+        width: auto;
+        float: none;
+    }
 }
 
 .website-content-right img {
@@ -158,6 +224,13 @@
 
 .seven-blessings-testimonial {
     margin:20px 5px;
+
+    @media only screen and (max-width: 940px) {
+        margin: 20px 0;
+        padding:25px 25px 25px 25px;
+        background-color:#fdfcfa;
+        border: 1px dashed #E3E0D7;
+    }
 }
 
 .hosting {
@@ -165,6 +238,10 @@
     padding:25px 25px 10px 25px;
     background-color:#fdfcfa;
     border: 1px dashed #E3E0D7;
+
+    @media only screen and (max-width: 940px) {
+        display: none;
+    }
 }
 
 .hosting-left, .hosting-right {
@@ -188,10 +265,18 @@
 
 .conversion-block-1 {
     width:620px;
+
+    @media only screen and (max-width: 940px) {
+        width: auto;
+    }
 }
 
 .conversion-block-2 {
     margin:10px 35px 0 0;
+
+    @media only screen and (max-width: 940px) {
+        display: none;
+    }
 }
 
 .landing-pages,
@@ -202,6 +287,18 @@
     padding:25px 25px 10px 25px;
     background-color:#fdfcfa;
     border: 1px dashed #E3E0D7;
+
+    @media only screen and (max-width: 940px) {
+        width: auto;
+        height: auto;
+    }
+
+}
+
+.conversion-testing {
+    @media only screen and (max-width: 940px) {
+        margin-top: 0;
+    }
 }
 
 /* emarketing consulting */
@@ -217,17 +314,38 @@
 .service .consulting-questions-2 {
     width:360px;
     margin:10px 0 0 15px;
+
+    @media only screen and (max-width: 940px) {
+        width: auto;
+        float: none;
+        margin-left: 0;
+    }
 }
 
 .service .consulting-questions-1 {
     padding-left:15px;
+
+    @media only screen and (max-width: 940px) {
+        padding: 0;
+    }
 }
 
 .service .consulting-questions-2 {
     padding-right:25px;
+
+    @media only screen and (max-width: 940px) {
+        padding: 0;
+    }
 }
 
-.service .consulting-questions-1 ul,
-.service .consulting-questions-2 ul {
-    margin: 0;
+@media only screen and (max-width: 940px) {
+    #content .service .consulting-questions-1 ul {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    #content .service .consulting-questions-2 ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
