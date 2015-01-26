@@ -1,38 +1,64 @@
 //Custom JS for kabucreative.com.au
 
 $(document).ready(function() {
+    function getMarkerOffset($el, $marker){
+        return ($el.outerWidth() / 2) - ($marker.outerWidth() / 2);
+    }
 
     //Moving marker on top navigation
+    var $nav = $('nav');
+
     if ($('nav a').hasClass('active')){
-        $(function() {
+        $nav.prepend('<div id="marker"></div>');
+    };
 
-            var leftPos, $el;
-            var $nav = $('nav');
+    function placeMarker(){
+        if ($('nav a').hasClass('active')){
+            $(function() {
+                var $marker = $('#marker'),
+                    markerOffset = getMarkerOffset($('.active'), $marker),
+                    leftPos,
+                    $el;
 
-            $nav.prepend('<div id="marker"></div>');
-            var $marker = $('#marker');
+                $marker
+                    .css('left', $('.active').position().left + markerOffset)
+                    .data('origLeft', $marker.position().left)
 
-            var elWidth = ($('.active').outerWidth() / 2) - 7; // Marker is 14px wide, hence 7
-
-            $marker
-                .css('left', $('.active').position().left + elWidth)
-                .data('origLeft', $marker.position().left)
-
-            $('nav a').hover(function() {
-                $el = $(this);
-                elWidth = (($(this).outerWidth()) / 2) - 7;
-                leftPos = ($el.position().left) + elWidth;
-                $marker.stop().animate({
-                    left: leftPos
-                });
-            }, function() {
-                $marker.stop().animate({
-                    left: $marker.data('origLeft')
+                $('nav a').hover(function() {
+                    $el = $(this);
+                    markerOffset = getMarkerOffset($(this), $marker);
+                    leftPos = ($el.position().left) + markerOffset;
+                    $marker.stop().animate({
+                        left: leftPos
+                    });
+                }, function() {
+                    $marker.stop().animate({
+                        left: $marker.data('origLeft')
+                    });
                 });
             });
-        });
 
+        };
     };
+
+    placeMarker();
+
+
+    //Mobile Menu
+    $('.toggle-nav').click(function(e){
+        e.preventDefault();
+        $nav.toggle();
+    });
+
+    $(window).resize(function() {
+        if ($(window).width() > 940) {
+            $nav.show();
+            placeMarker();
+        } else {
+            $nav.hide();
+        }
+    });
+
 
 
     //Add visit link on social media platform in footer
@@ -74,20 +100,11 @@ $(document).ready(function() {
 
     });
 
-
-    // Setup case study slider on Portfolio
-    $(function(){
-        $('#case-study-slider').slides({
-            play                :   5000,
-            generatePagination  :   false
-        });
-    });
 });
 
 $(window).load(function() { // Wait until entire page has loaded before commencing
 
     // Banner animation on homepage - cycle between banner divs
-
     // Load images in BG
     $('.banners').show();
 
