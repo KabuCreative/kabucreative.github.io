@@ -6,45 +6,115 @@
     float:left;
     position:relative;
     margin-top:10px;
+
+    @media only screen and (max-width: 940px) {
+        width: 25%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 20px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    @media only screen and (max-width: 750px) {
+        width: auto;
+        float: none;
+        margin: 0;
+        padding:20px;
+    }
+}
+
+
+.service-block.w-gutter {
+    @media only screen and (max-width: 940px) {
+        margin-right: 3%;
+    }
+
+    @media only screen and (max-width: 750px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
 }
 
 .homepage-badge {
     position:absolute;
     left:-10px;
     top:-10px;
+
+    @media only screen and (max-width: 940px) {
+        max-width: 80px;
+        top: -30px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 750px) {
+        display: none;
+    }
 }
+
 
 .service-block h2 {
     padding-left:62px;
     margin-top:-7px;
     line-height:1;
     font-size:26px;
+
+    @media only screen and (max-width: 940px) {
+        padding: 0;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    @media only screen and (max-width: 750px) {
+        margin-top: 5px;
+    }
 }
 
 .service-details {
     margin-top:20px;
     border-top:2px solid #f0efed;
     padding-top:20px;
+
+    @media only screen and (max-width: 200px) {
+        padding-top: 15px;
+    }
 }
 
 
 .service-block .green-button {
     margin:15px auto 5px auto;
     width: 170px;
+
+    @media only screen and (max-width: 940px) {
+        margin: 0;
+        width: auto;
+    }
+
+    @media only screen and (max-width: 940px) {
+        margin: 10px auto 0 auto;
+        max-width: 200px;
+    }
 }
 
 #homepage-title {
-    height:61px;
     text-align:center;
-    padding-top:36px;
+    padding:25px;
     margin:55px 0 45px 0;
-    background:url('../../img/homepage-title-bg.png') no-repeat center top;
+    background:url('../../img/homepage-title-bg.png');
+    border-top: 1px solid #f6f4ec;
+    border-bottom: 1px solid #f6f4ec;
 }
 
 
 #homepage-title h1{
     margin:0;
     padding:0;
+    line-height: 1.2;
 }
 
 .homepage-content {
@@ -53,6 +123,21 @@
     padding:0 30px;
     margin-bottom:20px;
     text-align:left;
+
+    @media only screen and (max-width: 940px) {
+        width: 30%;
+        padding: 0;
+    }
+
+    @media only screen and (max-width: 750px) {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .homepage-content.w-gutter {
+        margin-right: 5%;
+    }
 }
 
 .homepage-content h2 {

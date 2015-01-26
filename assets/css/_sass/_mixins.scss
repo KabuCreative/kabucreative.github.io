@@ -1,3 +1,7 @@
+img {
+    max-width: 100%;
+}
+
 .flt-right{
     float:right;
 }
@@ -7,6 +11,7 @@
 }
 
 .clear {
+    display: block;
     clear:both;
     width:0;
     height:0;

@@ -26,18 +26,22 @@ body {
 .wrapper {
     width: 940px;
     margin: 0 auto;
-    position:relative;
-    left:6px;
-}
 
-.header-wrapper {
-    width: 940px;
-    margin:0 auto;
+    @media only screen and (max-width: 940px) {
+        width: 90%;
+        padding: 0 5%;
+        margin: 0;
+    }
 }
 
 .left-col {
     width:618px;
     float:left;
+
+    @media only screen and (max-width: 940px) {
+        width: 100%;
+        float: none;
+    }
 }
 
 aside {
@@ -51,6 +55,10 @@ aside {
     -webkit-box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.03);
     margin:-308px 0 20px 20px;
     border:1px solid #eae7e3;
+
+    @media only screen and (max-width: 940px) {
+        display: none;
+    }
 }
 
 #content aside ul {
@@ -65,6 +73,10 @@ aside {
 #content ul {
     margin:0 0 20px 40px;
     list-style-type:disc;
+
+    @media only screen and (max-width: 940px) {
+        margin-left: 20px;
+    }
 }
 
 #content ul li {
@@ -85,12 +97,93 @@ aside {
 }
 
 /* header */
+header {
+    @media only screen and (max-width: 940px) {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.header-wrapper {
+    max-width: 940px;
+    margin:0 auto;
+}
+
+.header-wrapper.logos {
+    @media only screen and (max-width: 940px) {
+        border-bottom: 1px solid #e3e3e3;
+        background: url('../../img/mobile-header-bg.png') repeat 0 0;
+    }
+}
+
+#logo {
+    display:block;
+    width:244px;
+    height:190px;
+    position:absolute;
+    top:-2px;
+    margin-left:348px;
+    outline:none;
+    z-index:100;
+
+    @media only screen and (max-width: 940px) {
+        display: none;
+    }
+}
+
+#logo:hover {
+    top:0px;
+}
+
+.mobile-menu,
+#mobile-logo,
+.menu-arrow {
+    display: none;
+
+    @media only screen and (max-width: 940px) {
+        display: block;
+    }
+}
+
+#mobile-logo {
+    float: left;
+    margin: 11px 0 0 20px;
+}
+
+.mobile-menu {
+    padding: 25px;
+    float: right;
+    font-size: 17px;
+    color: #333;
+
+    &:hover {
+        color:#bd4137;
+    }
+}
+
+.menu-arrow {
+    float: right;
+    margin-top: 20px;
+    position: relative;
+    left: 10px;
+
+    @media only screen and (max-width: 250px) {
+        display: none;
+    }
+}
+
 #navigation-bar {
     height:50px;
     background: url('../../img/nav-bg.png') repeat-x 5px 0;
     margin-top:50px;
     position:relative;
     z-index:1;
+
+    @media only screen and (max-width: 940px) {
+        height: auto;
+        background: url('../../img/mobile-header-bg.png') repeat 0 0;
+        margin-top: 0;
+    }
 }
 
 nav {
@@ -99,6 +192,12 @@ nav {
     top:4px;
     left: 10px;
     margin: 0 auto;
+
+    @media only screen and (max-width: 940px) {
+        display: none;
+        width: 100%;
+        position: static;
+    }
 }
 
 nav a{
@@ -113,6 +212,24 @@ nav a{
     font-weight:normal;
     display: inline-block;
     text-align: center;
+
+    @media only screen and (max-width: 940px) {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    i.fa {
+        display: none;
+
+        @media only screen and (max-width: 940px) {
+            display: inline-block;
+            font-size: 12px;
+            position: absolute;
+            right: 20px;
+            margin-top: 3px;
+        }
+    }
 }
 
 nav a:hover{
@@ -122,27 +239,20 @@ nav a:hover{
 
 #about-us { /*make space for logo*/
     margin-right:277px;
-}
 
-#logo {
-    display:block;
-    width:244px;
-    height:190px;
-    position:absolute;
-    top:-2px;
-    margin-left:348px;
-    outline:none;
-    z-index:100;
-}
-
-#logo:hover {
-    top:0px;
+    @media only screen and (max-width: 940px) {
+        margin: 0;
+    }
 }
 
 #peek-kabu {
     position:relative;
     left:625px;
     top:-6px;
+
+    @media only screen and (max-width: 940px) {
+        display: none;
+    }
 }
 
 #marker {
@@ -152,6 +262,10 @@ nav a:hover{
     position: absolute;
     top:-11px;
     z-index:-10;
+
+    @media only screen and (max-width: 940px) {
+        display: none;
+    }
 }
 
 
@@ -159,6 +273,10 @@ nav a:hover{
 #main-section{
     position:relative;
     margin-top:-115px;
+
+    @media only screen and (max-width: 940px) {
+        margin-top: -15px;
+    }
 }
 
 #content-shadow {
@@ -397,6 +515,13 @@ footer {
     font-size:12px;
     color:#aeadab;
     margin-right:25px;
+
+    @media only screen and (max-width: 350px) {
+        float: none;
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
 }
 
 .footer-bottom-menu span a {
@@ -407,8 +532,16 @@ footer {
 .footer-bottom-menu span.powered {
     float:right;
     margin:0;
+
+    @media only screen and (max-width: 350px) {
+        float: none;
+    }
 }
 
 .careers {
     margin-right: 20px;
+
+    @media only screen and (max-width: 350px) {
+        margin: 0;
+    }
 }
