@@ -4,33 +4,96 @@
     height:480px;
     position:relative;
     top:-100px;
-    z-index:0;
+    z-index:-1;
+
+    @media only screen and (max-width: 940px) {
+        height: auto;
+        top: 0;
+        text-align: right;
+    }
 }
 
-.banner, /*default*/
-#banner-websites {
-    background-image: url('../../img/banners/websites.png');
-    width:591px;
-    height:333px;
+.banner {
     position:absolute;
+
+    @media only screen and (max-width: 940px) {
+        margin-top: 80px;
+        position: static;
+        display: inline-block;
+        margin-right: -6%;
+
+    }
+}
+
+#banner-websites {
+    width:591px;
     bottom:4px;
     left:56px;
 }
 
-#banner-home, #banner-feedback {
-    height:284px;
+#banner-about-us {
+    width:630px;
+    bottom:4px;
+    left:17px;
+}
+
+#banner-solutions, #banner-privacy-policy {
+    width:655px;
+    bottom:4px;
+    left:-1px;
+}
+
+#banner-web-apps {
+    width:574px;
+    bottom:0px;
+    left:16px;
+
+    @media only screen and (max-width: 940px) {
+        margin-right: 20%;
+    }
+}
+
+#banner-contact-us {
+    width:599px;
+    bottom:8px;
+    left:49px;
+}
+
+#banner-thank-you {
+    width:956px;
+    bottom:0;
+}
+
+#banner-page-not-found {
+    width:767px;
+    bottom:0px;
+    left:0px;
+
+    @media only screen and (max-width: 940px) {
+        margin-right: 20%;
+    }
+}
+
+
+// Homepage Banners
+
+
+.banners {
+    position: absolute;
+
+    @media only screen and (max-width: 940px) {
+        position: static;
+    }
+}
+
+#banner-home {
     width:725px;
-    background:url('../../img/banners/home-banner.png') no-repeat;
-    position:absolute;
     bottom:0;
     left:112px;
 }
 
 #banner-home-2 {
-    height:315px;
     width:952px;
-    background:url('../../img/banners/home-banner-2.png') no-repeat;
-    position:absolute;
     bottom:-315px;
     left:6px;
     display:none;
@@ -38,64 +101,9 @@
 }
 
 #banner-home-3 {
-    height:279px;
     width:835px;
-    background:url('../../img/banners/home-banner-3.png') no-repeat;
     position:absolute;
     bottom:-279px;
     left:24px;
     display:none;
-}
-
-#banner-about-us {
-    background-image: url('../../img/banners/about.png');
-    width:630px;
-    height:351px;
-    position:absolute;
-    bottom:4px;
-    left:17px;
-}
-
-#banner-solutions, #banner-privacy-policy {
-    background-image: url('../../img/banners/solutions.png');
-    width:655px;
-    height:269px;
-    position:absolute;
-    bottom:4px;
-    left:-1px;
-}
-
-#banner-web-apps {
-    background-image: url('../../img/banners/web-apps.png');
-    width:574px;
-    height:327px;
-    position:absolute;
-    bottom:0px;
-    left:16px;
-}
-
-#banner-contact-us {
-    width:599px;
-    height:278px;
-    background-image: url('../../img/banners/contact.png');
-    position:absolute;
-    bottom:8px;
-    left:49px;
-}
-
-#banner-thank-you {
-    width:956px;
-    height:306px;
-    background-image: url('../../img/banners/thanks.png');
-    position:absolute;
-    bottom:0;
-}
-
-#banner-page-not-found {
-    width:767px;
-    height:366px;
-    background-image: url('../../img/banners/page-not-found.png');
-    position:absolute;
-    bottom:0px;
-    left:0px;
 }

@@ -1,7 +1,12 @@
-<div id="banner-space" class="wrapper">
-    <div id="banner-{{ page.id }}" class="{% if page.id == 'home' %}banners{% else %}banner{% endif %}"></div>
+<div id="banner-space" class="wrapper{% if page.id == 'home' %} home-banner-space{% endif %}">
+    {% if page.id == 'privacy-policy' %}
+        <img src="/assets/img/banners/solutions.png" id="banner-{{ page.id }}" class="banner" />
+    {% else %}
+        <img src="/assets/img/banners/{{ page.id }}.png" id="banner-{{ page.id }}" class="banner{% if page.id == 'home' %}s{% endif %}" />
+    {% endif %}
+
     {% if page.id == 'home' %}
-        <div id="banner-home-2" class="banners"></div>
-        <div id="banner-home-3" class="banners"></div>
+        <img src="/assets/img/banners/home-2.png" id="banner-home-2" class="banners" />
+        <img src="/assets/img/banners/home-3.png" id="banner-home-3" class="banners" />
     {% endif %}
 </div>
