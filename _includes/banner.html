@@ -1,12 +1,26 @@
-<div id="banner-space" class="wrapper{% if page.id == 'home' %} home-banner-space{% endif %}">
-    {% if page.id == 'privacy-policy' %}
-        <img src="/assets/img/banners/solutions.png" id="banner-{{ page.id }}" class="banner" />
-    {% else %}
-        <img src="/assets/img/banners/{{ page.id }}.png" id="banner-{{ page.id }}" class="banner{% if page.id == 'home' %}s{% endif %}" />
-    {% endif %}
+<div id="banner-space" class="wrapper{% if page.banner == 'home' %} home-banner-space{% endif %}">
+    <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="/assets/img/banners/{{ page.banner }}.png" media="(min-width: 401px)">
+        <source srcset="/assets/img/banners/{{ page.banner }}-mobile.png" media="(max-width: 400px)">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="/assets/img/banners/{{ page.banner }}-small.png" alt="{{ page.title }}" id="banner-{{ page.banner }}" class="banner{% if page.banner == 'home' %}s{% endif %}" data-proofer-ignore>
+    </picture>
 
     {% if page.id == 'home' %}
-        <img src="/assets/img/banners/home-2.png" id="banner-home-2" class="banners" />
-        <img src="/assets/img/banners/home-3.png" id="banner-home-3" class="banners" />
+        <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="/assets/img/banners/home-2.png" media="(min-width: 401px)">
+            <source srcset="/assets/img/banners/home-2-mobile.png" media="(max-width: 400px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="/assets/img/banners/home-2-small.png" alt="{{ page.title }}" id="banner-home-2" class="banners" data-proofer-ignore>
+        </picture>
+        <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="/assets/img/banners/home-3.png" media="(min-width: 401px)">
+            <source srcset="/assets/img/banners/home-3-mobile.png" media="(max-width: 400px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="/assets/img/banners/home-3-small.png" alt="{{ page.title }}" id="banner-home-3" class="banners" data-proofer-ignore>
+        </picture>
     {% endif %}
 </div>
