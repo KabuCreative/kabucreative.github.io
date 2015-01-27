@@ -99,32 +99,6 @@ $(document).ready(function() {
         });
 
     });
-
-    // Render Google map on Contact Page
-    function initialiseGoogleMap(){
-
-        var lat = -36.75196;
-        var lng = 144.26183;
-
-        var kabuLatlng = new google.maps.LatLng(lat,lng);
-        var mapOptions = {
-          zoom: 13,
-          center: new google.maps.LatLng(lat,lng),
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-
-        var marker = new google.maps.Marker({
-            position: kabuLatlng,
-            title:"14 Quick Street, Ironbark"
-        });
-        // To add the marker to the map, call setMap();
-        marker.setMap(map);
-
-    };
-
-    initialiseGoogleMap();
-
 });
 
 $(window).load(function() { // Wait until entire page has loaded before commencing
