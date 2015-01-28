@@ -1,18 +1,12 @@
 # Site settings
 title: Kabu Creative
 email: info@kabucreative.com.au
-description: > # this means to ignore newlines until "url:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 url: "http://www.kabucreative.com.au"
-twitter_username: kabucreative
-github_username:  kabucreative
 
 # Build settings
 timezone: Australia/Melbourne
 highlighter: pygments
-markdown: kramdown
+
 sass:
     sass_dir: /assets/css/_sass
     style: :compressed
