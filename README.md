@@ -1,6 +1,6 @@
 # Source for kabucreative.com.au
 
-<img src="https://travis-ci.org/kabucreative/kabucreative.github.io.svg?branch=masterhttps://travis-ci.org/KabuCreative/kabucreative.github.io.svg?branch=master" alt="CI status"/>
+<img src="https://travis-ci.org/KabuCreative/kabucreative.github.io.svg?branch=master" alt="CI status"/>
 
 This website is built with [Jekyll](http://jekyllrb.com) and hosted on Github Pages.
 
