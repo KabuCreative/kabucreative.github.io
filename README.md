@@ -6,7 +6,7 @@ This website is built with [Jekyll](http://jekyllrb.com) and hosted on Github Pa
 
 ## Adding New Pages
 
-New projects should be added to the root directory, named as `<slug>.html`.  Available front matter:
+New pages should be added to the root directory, named as `<slug>.html`.  Available front matter:
 
 ```yaml
 ---
