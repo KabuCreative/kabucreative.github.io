@@ -59,6 +59,10 @@
 
 #kabu-phone span {
     font-size:24px;
+
+    @media only screen and (max-width: 425px) {
+        font-size: 17px;
+    }
 }
 
 #kabu-email {
@@ -66,29 +70,41 @@
     background: url('../../img/envelope-icon.png') no-repeat center left;
     margin-top:5px;
     padding:0 0 0 35px;
-}
 
-#map {
-    clear:both;
-    padding: 15px 20px 20px 20px;
-    width: 575px;
-    margin:3px 0 20px 0;
-
-    @media only screen and (max-width: 940px) {
-        width: 95%;
-        padding: 2%;
+    @media only screen and (max-width: 425px) {
+        font-size: 16px;
     }
 }
 
-#map p {
-    padding-bottom:15px;
+.staff-profile {
+    width: 42%;
+    float: left;
+    padding: 2.5% 2.5% 0 2.5%;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    background-color:#fdfcfa;
+    border: 1px dashed #E3E0D7;
+    margin-bottom: 40px;
+
+    @media only screen and (max-width: 425px) {
+        width: 95%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    img {
+        margin-bottom: 10px;
+    }
+
+    p {
+        padding-bottom: 12px;
+    }
 }
 
-#map_canvas {
-    width:575px;
-    height:200px;
+.oli {
+    margin-right: 4%;
 
-    @media only screen and (max-width: 940px) {
-        width: 100%;
+    @media only screen and (max-width: 425px) {
+        margin-right: 0;
     }
 }
