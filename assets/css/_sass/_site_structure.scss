@@ -109,7 +109,7 @@ header {
     margin:0 auto;
 }
 
-.header-wrapper.logos {
+#mobile-menu-bar {
     @media only screen and (max-width: 940px) {
         border-bottom: 1px solid #e3e3e3;
         background: url('../../img/mobile-header-bg.png') repeat 0 0;
