@@ -21,7 +21,7 @@ redirect_from:
   - <redirected URL 2>
 ---
 ```
-## Style Guide 
+## Style Guide
 
 ### Embossed effect when creating new banner images
 
@@ -32,9 +32,9 @@ redirect_from:
 1.  Right click on text layer and select `Alpha to selection`.
 1.  Delete selection from layer above.
 1.  Create a drop shadow from this layer.
-  1.  For large letters, select `offset x: 3, offset y: 3, blur radius: 2`, for small letters select `offset x: 2, offset y: 2, blur radius: 1`.
-	1.  Choose `<SHADOW_COLOUR>` as color and specify opacity.
-	1.  Untick `Allow Resizing`.
+    1.  For large letters, select `offset x: 3, offset y: 3, blur radius: 2`, for small letters select `offset x: 2, offset y: 2, blur radius: 1`.
+    1.  Choose `<SHADOW_COLOUR>` as color and specify opacity.
+    1.  Untick `Allow Resizing`.
 1.  Delete layer filled with any colour.
 1.  Right click on text layer and select `Alpha to selection`.
 1.  Invert selection.
