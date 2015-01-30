@@ -4,7 +4,7 @@
         <source srcset="/assets/img/banners/{{ page.banner }}.png" media="(min-width: 401px)">
         <source srcset="/assets/img/banners/{{ page.banner }}-mobile.png" media="(max-width: 400px)">
         <!--[if IE 9]></video><![endif]-->
-        <img srcset="/assets/img/banners/{{ page.banner }}.png" alt="{{ page.title }}" id="banner-{{ page.banner }}" class="banner{% if page.banner == 'home' %}s{% endif %}" data-proofer-ignore>
+        <img srcset="/assets/img/banners/{{ page.banner }}.png" alt="{{ page.title }}" id="banner-{{ page.banner }}" class="banner{% if page.banner == 'home' %}s{% endif %}">
     </picture>
 
     {% if page.id == 'home' %}
@@ -13,14 +13,14 @@
             <source srcset="/assets/img/banners/home-2.png" media="(min-width: 401px)">
             <source srcset="/assets/img/banners/home-2-mobile.png" media="(max-width: 400px)">
             <!--[if IE 9]></video><![endif]-->
-            <img srcset="/assets/img/banners/home-2.png" alt="{{ page.title }}" id="banner-home-2" class="banners" data-proofer-ignore>
+            <img srcset="/assets/img/banners/home-2.png" alt="{{ page.title }}" id="banner-home-2" class="banners">
         </picture>
         <picture>
             <!--[if IE 9]><video style="display: none;"><![endif]-->
             <source srcset="/assets/img/banners/home-3.png" media="(min-width: 401px)">
             <source srcset="/assets/img/banners/home-3-mobile.png" media="(max-width: 400px)">
             <!--[if IE 9]></video><![endif]-->
-            <img srcset="/assets/img/banners/home-3.png" alt="{{ page.title }}" id="banner-home-3" class="banners" data-proofer-ignore>
+            <img srcset="/assets/img/banners/home-3.png" alt="{{ page.title }}" id="banner-home-3" class="banners">
         </picture>
     {% endif %}
 </div>
