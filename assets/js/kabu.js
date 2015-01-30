@@ -107,18 +107,11 @@ $(window).load(function() { // Wait until entire page has loaded before commenci
 
     // Create an empty array
     var banners = [];
-    var $tallestBanner;
 
     // Fill array with banner ids, i.e. ['banner-home', 'banner-home-2', 'banner-home-3']
     $('.banners').each(function () {
         var banner = $(this).attr('id');
         banners.push(banner); // push = add it to the end of the array
-
-        var height = $(this).height();
-
-        if ($tallestBanner === undefined || height > $tallestBanner.height()){
-            $tallestBanner = $(this);
-        }
     });
 
     function switchBanners(){
@@ -148,12 +141,13 @@ $(window).load(function() { // Wait until entire page has loaded before commenci
     }, 4000);
 
     var bannerContainer = $('.home-banner-space');
-    var menuHeight;
+    var bannerHeight, menuHeight;
 
     function setContainerHeight(){
         if ($(window).width() < 960) {
+            bannerHeight = $('#banner-home').height()
             menuHeight = $('#mobile-menu-bar').height()
-            bannerContainer.height($tallestBanner.height() * 1.05 + menuHeight);
+            bannerContainer.height(bannerHeight * 1.05 + menuHeight);
         } else {
             bannerContainer.height(480);
         }
