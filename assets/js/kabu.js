@@ -139,24 +139,4 @@ $(window).load(function() { // Wait until entire page has loaded before commenci
     setTimeout(function(){
         switchBanners();
     }, 4000);
-
-    var bannerContainer = $('.home-banner-space');
-    var bannerHeight, menuHeight;
-
-    function setContainerHeight(){
-        if ($(window).width() < 960) {
-            bannerHeight = $('#banner-home').height()
-            menuHeight = $('#mobile-menu-bar').height()
-            bannerContainer.height(bannerHeight * 1.05 + menuHeight);
-        } else {
-            bannerContainer.height(480);
-        }
-    }
-
-    setContainerHeight();
-
-    $(window).resize(function() {
-        setContainerHeight();
-    });
-
 });
