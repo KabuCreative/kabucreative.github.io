@@ -59,15 +59,19 @@ $(document).ready(function() {
 
     // Resize banner container
     var bannerContainer = $('.home-banner-space');
+    var starburst = $('#starburst');
     var bannerHeight, menuHeight;
 
     function setContainerHeight(){
         if ($(window).width() < 960) {
             bannerHeight = $('#banner-home').height()
             menuHeight = $('#mobile-menu-bar').height()
-            bannerContainer.height(bannerHeight * 1.05 + menuHeight);
+            calculatedHeight = bannerHeight * 1.05 + menuHeight;
+            bannerContainer.height(calculatedHeight);
+            starburst.height($('#banner-space').height());
         } else {
             bannerContainer.height(480);
+            starburst.height(480);
         }
     }
 

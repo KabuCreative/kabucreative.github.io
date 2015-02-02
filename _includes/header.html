@@ -1,7 +1,5 @@
 <body class="monokai">
 
-    <div id="body-bg"></div>
-
     <noscript>
         <div id="no-js-container">
             <p id="no-js">To get the most out of this website, we recommend you <a href="http://enable-javascript.com/" target="_blank">enable Javascript.</a></p>
@@ -17,23 +15,34 @@
     </div>
     <p id="ie6-title">Kabu Creative</p>
 
-    <div id="background"> <!-- This is closed in footer.html -->
-        <header>
-            <div id="mobile-menu-bar" class="header-wrapper" itemscope itemtype="http://schema.org/Organization">
-                <a itemprop="url" href="http://www.kabucreative.com.au">
-                    <img src="/assets/img/kabu-logo.png" id="logo" alt="Kabu Creative">
-                </a>
-                <a href="/" id="mobile-logo">
-                    <img itemprop="logo" src="/assets/img/kabu-logo-small.svg" alt="Kabu Creative">
-                </a>
-                <a href="/" class="mobile-menu toggle-nav"><i class="fa fa-bars"></i></a>
-                <img src="/assets/img/menu-arrow.svg" alt="Arrow pointing at menu" class="menu-arrow"/>
-                <span class="clear"></span>
+    <div id="starburst">
+        <picture>
+            <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source srcset="/assets/img/starburst.png" media="(min-width: 961px)">
+            <source srcset="/assets/img/starburst-960.png" media="(min-width: 700px)">
+            <source srcset="/assets/img/starburst-700.png" media="(min-width: 400px)">
+            <source srcset="/assets/img/starburst-400.png" media="(max-width: 400px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="/assets/img/starburst.png" alt="background image">
+        </picture>
+    </div>
+
+    <header>
+        <div id="mobile-menu-bar" class="header-wrapper" itemscope itemtype="http://schema.org/Organization">
+            <a itemprop="url" href="http://www.kabucreative.com.au">
+                <img src="/assets/img/kabu-logo.png" id="logo" alt="Kabu Creative">
+            </a>
+            <a href="/" id="mobile-logo">
+                <img itemprop="logo" src="/assets/img/kabu-logo-small.svg" alt="Kabu Creative">
+            </a>
+            <a href="/" class="mobile-menu toggle-nav"><i class="fa fa-bars"></i></a>
+            <img src="/assets/img/menu-arrow.svg" alt="Arrow pointing at menu" class="menu-arrow"/>
+            <span class="clear"></span>
+        </div>
+        <div id="navigation-bar">
+            {% include nav.html %}
+            <div class="header-wrapper">
+                <img src="/assets/img/peek-kabu.png" alt="peek-kabu!" id="peek-kabu"/>
             </div>
-            <div id="navigation-bar">
-                {% include nav.html %}
-                <div class="header-wrapper">
-                    <img src="/assets/img/peek-kabu.png" alt="peek-kabu!" id="peek-kabu"/>
-                </div>
-            </div>
-        </header>
+        </div>
+    </header>
