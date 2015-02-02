@@ -63,7 +63,7 @@ $(document).ready(function() {
     var bannerHeight, menuHeight;
 
     function setContainerHeight(){
-        if ($(window).width() < 960) {
+        if ($(window).width() < 940) {
             bannerHeight = $('#banner-home').height()
             menuHeight = $('#mobile-menu-bar').height()
             calculatedHeight = bannerHeight * 1.05 + menuHeight;
