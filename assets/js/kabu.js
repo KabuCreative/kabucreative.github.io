@@ -1,4 +1,4 @@
-//Custom JS for kabucreative.com.au
+//Custom JS for kabucreative.com
 
 $(document).ready(function() {
 

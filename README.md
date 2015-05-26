@@ -1,4 +1,4 @@
-# Source for kabucreative.com.au
+# Source for kabucreative.com
 
 <img src="https://travis-ci.org/KabuCreative/kabucreative.github.io.svg?branch=master" alt="CI status"/>
 
