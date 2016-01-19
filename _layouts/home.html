@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    {% include banner.html %}
+
+    <div id="main-section">
+        <div id="content-shadow"></div>
+        <div id="content-bg"></div>
+        <div id="content">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+
+  </body>
+
+</html>
