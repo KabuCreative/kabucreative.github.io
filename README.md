@@ -2,7 +2,7 @@
 
 <img src="https://travis-ci.org/KabuCreative/kabucreative.github.io.svg?branch=master" alt="CI status"/>
 
-This website is built with [Jekyll](http://jekyllrb.com) and hosted on Github Pages.
+This website is built with [Jekyll](http://jekyllrb.com) and hosted on GitHub Pages.
 
 ## Adding New Pages
 
