@@ -13,7 +13,6 @@ sass:
 
 exclude: [vendor]
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
-
